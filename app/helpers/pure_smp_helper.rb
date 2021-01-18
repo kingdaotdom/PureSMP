@@ -1,0 +1,2 @@
+module PureSmpHelper
+end

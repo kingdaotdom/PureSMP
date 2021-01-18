@@ -1,0 +1,93 @@
+// Place all the styles related to the PureSMP controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+body {
+    margin: 0;
+    font-family: sans-serif;
+    font-weight: 300;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background: #55d6aa
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.logo {
+    float: left;
+    padding: 10px 0;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 23px;
+    position: relative;
+}
+
+.a {
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+nav .a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 100%;
+    background-color: #444;
+    position: absolute;
+    top: 0;
+    width: 0%;
+    transition: all ease-in-out 150ms;
+}
+
+nav .a:hover::before {
+    width: 100%;
+}
+
+.gap {
+    width: 100vh;
+    height: 95px
+}
+
+.SMPcolour {
+    color: #55d6aa;
+}
+
+.textContainer {
+    margin: auto;
+    width: 50%;
+    border: 3px solid black;
+    padding: 30px;
+}
+
+.fontMed {
+    font-size: 30px;
+}
